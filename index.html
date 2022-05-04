@@ -45,7 +45,7 @@
           <p class="lead">A One-day Conference About All Things JavaScript!</p>
             <div class="btn-group mt-4" role="group" aria-label="Callout buttons">
               <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#register">Register Now</button>
-              <button  class="btn btn-light btn-lg" href="#speakers">See Speakers</button>
+              <button  class="btn btn-light btn-lg nav-link" href="#Speakers">See Speakers</button>
             </div>
         </div>
       </div>
@@ -260,6 +260,7 @@
 
       </div>
     <!-- / Container -->
+
           <!--=====================================
           FORM MODAL
           =====================================-->
@@ -276,14 +277,26 @@
                 <div class="modal-body">
                   <!-- Registration form -->
                   <form>
+                    <h5 class="mb-4">Basic Info</h5>
                     <div class="form-group">
-                      <label for="name">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                      <label for="name">Name:</label>
+                      <input type="email" class="form-control" id="name" >    
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email:</label>
+                      <input type="email" class="form-control" id="email" >
                       <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputPassword1">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      <label for="role">Job Role:</label>
+                      <select class="form-control" id="role">
+                        <option value="full stack js developer">Full Stack JavaScript Developer</option>
+                        <option value="front end developer">Front End Developer</option>
+                        <option value="back end developer">Back End Developer</option>
+                        <option value="designer">Designer</option>
+                        <option value="student">Student</option> 
+                      </select>
+                      
                     </div>
                 
                   </form>
